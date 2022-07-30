@@ -16,8 +16,12 @@ int main(int argc, char *argv[])
     {
         while (argv[l][i] != '\0')
         {
-            ft_putchar(argv[l][i]);    
             i++;
+        }
+        while (i >= 0)
+        {
+            ft_putchar(argv[l][i]);
+            i--;
         }
         ft_putchar('\n');
     l++;
